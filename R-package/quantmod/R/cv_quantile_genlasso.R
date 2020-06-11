@@ -61,7 +61,8 @@ cv_quantile_genlasso = function(x, y, d, tau, lambda=NULL, nlambda=30,
   # Grab the specified training and test inds, or else build them 
   if (!is.null(train_test_inds)) {
     train = train_test_inds$train
-   test = train_test_inds$test
+    test = train_test_inds$test
+    nfolds = length(train)
   }
   else {
     folds = rep(1:nfolds, n)[sample(n)]
