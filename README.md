@@ -5,8 +5,7 @@ cross-validation, and ensembles.
 
 ### Install the R package
 
-To install the conformalInference R package directly from github, run the
-following in R:
+To install the quantmod R package directly from github, run the following in R:
 
 ```{r}
 library(devtools)
